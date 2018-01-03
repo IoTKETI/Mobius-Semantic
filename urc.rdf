@@ -1,0 +1,21 @@
+<rdf:RDF
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:oneM2M="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:domain="http://onem2m.keti.re.kr/2017/example.owl#" >
+     <rdf:Description rdf:about="#smart_aging*oUrcControl">
+          <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationOutput"/>
+          <oneM2M:oneM2MTargetURI rdf:resource="./smart_aging/urc_ctrl"/>
+          <oneM2M:oneM2MAttribute>#latest</oneM2M:oneM2MAttribute>
+          <oneM2M:hasDataType>xsd:literal</oneM2M:hasDataType>
+          <oneM2M:oneM2MMethod>RETRIEVE</oneM2M:oneM2MMethod>
+     </rdf:Description>
+     <rdf:Description rdf:about="#smart_aging*iUrcControl">
+          <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationInput"/>
+          <oneM2M:oneM2MTargetURI rdf:resource="./smart_aging/urc_ctrl"/>
+          <oneM2M:hasDataType>xsd:literal</oneM2M:hasDataType>
+          <oneM2M:oneM2MMethod>CREATE</oneM2M:oneM2MMethod>
+     </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,27 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:oneM2M="http://www.onem2m.org/ontology/Base_Ontology#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:cfso="http://203.254.173.81:8080/ontologies/ConnectedFarmServiceOntology.owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <oneM2M:Thing rdf:about="http://203.254.173.81:8080/ontologies/ConnectedFarmServiceOntology.owl#KETICF">
+    <cfso:hasSpecies>
+      <cfso:Species rdf:about="http://203.254.173.81:8080/ontologies/ConnectedFarmServiceOntology.owl#Type1"/>
+    </cfso:hasSpecies>
+    <cfso:hasSPName>
+      <cfso:SPName rdf:about="http://203.254.173.81:8080/ontologies/ConnectedFarmServiceOntology.owl#Maxfor"/>
+    </cfso:hasSPName>
+    <cfso:hasLocation>
+      <cfso:Location rdf:about="http://203.254.173.81:8080/ontologies/ConnectedFarmServiceOntology.owl#Buyeo"/>
+    </cfso:hasLocation>
+    <cfso:hasCropName>
+      <cfso:CropName rdf:about="http://203.254.173.81:8080/ontologies/ConnectedFarmServiceOntology.owl#CharryTomato">
+        <cfso:hasSpecies rdf:resource="http://203.254.173.81:8080/ontologies/ConnectedFarmServiceOntology.owl#Type1"/>
+      </cfso:CropName>
+    </cfso:hasCropName>
+    <cfso:hasControlMode>
+      <cfso:ControlMode rdf:about="http://203.254.173.81:8080/ontologies/ConnectedFarmServiceOntology.owl#A"/>
+    </cfso:hasControlMode>
+  </oneM2M:Thing>
+</rdf:RDF>

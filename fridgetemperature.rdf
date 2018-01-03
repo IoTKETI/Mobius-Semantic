@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.onem2m.org/ontology/houses_temperature_example#"
+     xml:base="http://www.onem2m.org/ontology/houses_temperature_example"
+     xmlns:temperature_example="http://www.onem2m.org/ontology/temperature_example#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+    <owl:NamedIndividual rdf:about="http://www.onem2m.org/ontology/houses_temperature_example#Fridge1">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/temperature_example#Fridge"/>
+        <temperature_example:hasFridgeTemperature rdf:resource="http://www.onem2m.org/ontology/houses_temperature_example#FridgeTempProperty"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.onem2m.org/ontology/houses_temperature_example#FridgeTempProperty">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/temperature_example#TemperatureProperty"/>
+  <temperature_example:hasDatatype>xsd:double</temperature_example:hasDatatype>
+  <temperature_example:hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Celsius</temperature_example:hasUnit>
+  <temperature_example:valueIsStoredIn>http://in.provider.com:7579/server/tempsensorae4/temperature/latest</temperature_example:valueIsStoredIn>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.onem2m.org/ontology/houses_temperature_example#FridgeTempSensor">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/temperature_example#TemperatureSensor"/>
+        <temperature_example:hasTemperatureMeasuringFunction rdf:resource="http://www.onem2m.org/ontology/houses_temperature_example#TempFunction4"/>
+    </owl:NamedIndividual>
+
+
+    <owl:NamedIndividual rdf:about="http://www.onem2m.org/ontology/houses_temperature_example#TempFunction4">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/temperature_example#TemperatureMeasuringFunction"/>
+        <temperature_example:measuresTemperature rdf:resource="http://www.onem2m.org/ontology/houses_temperature_example#FridgeTempProperty"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
